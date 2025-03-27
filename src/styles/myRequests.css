@@ -1,0 +1,133 @@
+.my-requests-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 50px 30px 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease-in-out;
+}
+
+/* Title Styling */
+.my-requests-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+/* Ticket List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Individual Ticket Item */
+.ticket-item {
+    background: #f7f9fc;
+    padding: 18px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.ticket-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Ticket Text Styling */
+.ticket-item strong {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.ticket-item p {
+    margin: 6px 0;
+    color: #444;
+    font-size: 15px;
+}
+
+/* Attachments Styling */
+.attachment-container {
+    margin-top: 8px;
+}
+
+.attachment-container strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.attachment-link {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.attachment-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Back Button */
+.back-button {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+}
+
+/* Spinner Container */
+.loading-spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Spinner Animation */
+  .spinner {
+    width: 30px;
+    height: 30px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 5px;
+  }
+  
+  /* Spinner Animation Keyframes */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

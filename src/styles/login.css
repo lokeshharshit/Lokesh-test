@@ -1,0 +1,138 @@
+/* Reset default margins */
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and HTML Defaults - DO NOT MODIFY */
+html, body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5; /* Keep neutral background */
+  color: #333;
+  height: 100%;
+}
+
+/* Center only the login form */
+body.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fff;
+  margin: 0;
+}
+
+
+/* Center only login form properly */
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(#280a48, #20043d); /* Background */
+}
+
+/* Login Container - Reduced Width & Padding */
+.login-container {
+  width: 320px; /* Smaller width */
+  padding: 25px; /* Reduced padding */
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Heading - Smaller & Centered */
+h3 {
+  color: #760e6a;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+/* Error Message */
+.error-message {
+  color: #d9534f;
+  padding: 6px;
+  font-size: 12px;
+  background-color: #f8d7da;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+/* Input Group */
+.input-group {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Label - Smaller */
+.input-group label {
+  display: block;
+  font-weight: bold;
+  color: #444;
+  font-size: 13px;
+}
+
+/* Input Fields - Compact & Readable */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #7d0b79;
+  outline: none;
+}
+
+/* Login Button - Compact & Clickable */
+.login-button {
+  width: 100%;
+  padding: 8px;
+  background-color: #7925d3;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #1b082f;
+}
+
+.link-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.link {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #0056b3;
+}
+
+.forgot-password {
+  font-size: 12px; /* Decrease font size */
+  text-align: right; /* Align to the right */
+  display: block; /* Ensures it takes full width */
+  margin-top: 5px; /* Optional spacing */
+  color: #007bff; /* Optional: Change link color */
+  text-decoration: none; /* Optional: Remove underline */
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+

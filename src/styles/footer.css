@@ -1,0 +1,7 @@
+.footer {
+    position: fixed;
+    bottom: 10px;  /* Adjust vertical position */
+    left: 10px;    /* Align to the left */
+    font-size: 12px;  /* Smaller font size */
+    color: #1f1c1c;   /* Light color */
+}
