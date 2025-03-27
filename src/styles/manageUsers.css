@@ -1,0 +1,143 @@
+.manage-users-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ✅ Search Bar */
+.search-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* ✅ Users Table */
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.users-table th, .users-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.users-table th {
+    background-color: #f4f4f4;
+}
+
+/* ✅ Buttons */
+.edit-btn, .reset-btn, .deactivate-btn, .activate-btn, .add-user-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.edit-btn { background-color: #007bff; color: white; }
+.reset-btn { background-color: #f39c12; color: white; }
+.deactivate-btn { background-color: #e74c3c; color: white; }
+.activate-btn { background-color: #2ecc71; color: white; }
+.add-user-btn { background-color: #28a745; color: white; }
+
+.edit-btn:hover, .reset-btn:hover, .deactivate-btn:hover, .activate-btn:hover, .add-user-btn:hover {
+    opacity: 0.8;
+}
+
+/* ✅ Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ✅ Modal Box */
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.modal-content h3 {
+    color: #6a0dad;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* ✅ Input Fields */
+.modal-content input,
+.modal-content select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* ✅ Modal Actions */
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.save-btn, .cancel-btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 48%;
+}
+
+.save-btn { background-color: #007bff; color: white; }
+.cancel-btn { background-color: #6c757d; color: white; }
+
+.save-btn:hover { background-color: #0056b3; }
+.cancel-btn:hover { background-color: #545b62; }
+
+/* ✅ Back Button */
+.back-btn {
+    background-color: #f0f0f0;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.back-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* ✅ Add User Button */
+.add-user-btn {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    float: right;
+}
+
+.add-user-btn:hover {
+    background-color: #45a049;
+}
