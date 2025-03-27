@@ -39,3 +39,27 @@ export const submitTicket = async (ticketData) => {
     throw new Error(error.response?.data?.message || "API request failed");
   }
 };
+
+// ✅ Added updateTicket function to ensure Description is not lost
+export const updateTicket = async (ticketId, updatedData) => {
+  try {
+    // Fetch the current ticket data first
+    const { data: existingTicket } = await axios.get(`${apiUrl}/${ticketId}`);
+
+    // Ensure Description is not lost
+    const updatedTicketData = {
+      ...existingTicket, // Keep all existing fields
+      ...updatedData, // Override only the updated fields
+      Description: existingTicket.Description, // Ensure description remains
+    };
+
+    const response = await axios.put(`${apiUrl}/${ticketId}`, updatedTicketData, {
+      headers: { "Content-Type": "application/json" },
+    });
+
+    return response.data;
+  } catch (error) {
+    console.error("Failed to update ticket:", error);
+    throw new Error(error.response?.data?.message || "Update failed");
+  }
+};
