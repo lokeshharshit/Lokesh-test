@@ -52,18 +52,28 @@ const ManageUsers = () => {
 
   const handleUpdateUser = async () => {
     try {
-      await axios.put(
-        `${apiUrl}?UserId=${editingUser.UserId}`,
-        updatedUserData,
-        { headers: { "Content-Type": "application/json" } }
-      );
+      const payload = {
+        UserId: editingUser.UserId,  // Ensure UserId is included
+        UserName: updatedUserData.UserName,
+        Email: updatedUserData.Email,
+        RoleId: updatedUserData.RoleId
+      };
+  
+      console.log("Sending update request with payload:", payload);
+  
+      const response = await axios.put(apiUrl, payload, {
+        headers: { "Content-Type": "application/json" }
+      });
+      
       alert("User updated successfully!");
       fetchUsers();
       setEditingUser(null);
     } catch (error) {
-      console.error("Update failed:", error);
+      console.error("Update failed:", error.response ? error.response.data : error.message);
+      alert("Error updating user. Check console for details.");
     }
   };
+  
 
   const handleCreateUser = async () => {
     try {
