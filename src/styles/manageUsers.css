@@ -141,3 +141,8 @@
 .add-user-btn:hover {
     background-color: #45a049;
 }
+
+.manage-users-container {
+    margin-top: 80px;
+    padding: 20px;
+  }  
